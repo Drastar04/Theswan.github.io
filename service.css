@@ -1,0 +1,392 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header{
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+header > nav{
+    width: 99%;
+    height: 70px;
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    font-family: "DM Sans", sans-serif;
+
+    /* background: rgba(0,0,0,0.5); */
+}
+
+nav > ul{
+    display: flex;
+    list-style-type: none;
+    gap: 10px;
+}
+nav > ul > li > a{
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    margin-left: 20px;
+    font-size: 1rem;
+    padding: 10px 10px;
+    display: flex;
+}
+nav > ul > li > a:hover{
+    color: blue;
+    text-decoration: underline;
+}
+
+.contact-details{
+    color: white;
+    text-decoration: none;
+    background-color: transparent;
+    border: 1px solid white;
+    padding: 8px 15px;
+    border-radius: 5px;
+    
+}
+.contact-details a:link{
+    color: white;
+    text-decoration: none;
+}
+.contact-details a:hover{
+    color: white;
+    text-decoration: underline;
+}
+.hero-section{
+    width: 100%;
+    height: 400px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+}
+.hero-section::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-image: url(Images/wallpaperflare.com_wallpaper\ \(38\).jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-color: gray;
+    background-blend-mode: darken;
+    z-index: -1;
+}
+.text{
+    text-align: center;
+}
+.text > p{
+    font-size: 5rem;
+    font-family: "DM Sans", sans-serif;
+    color: white;
+}
+@media (max-width: 900px){
+    nav{
+        width: 100%;
+        flex-direction: column;
+    }
+}
+@media (max-width: 900px){
+    .text > p{
+        width: 100%;
+       font-size: 3rem;
+    }
+}
+@media (max-width: 900px){
+    .contact-details{
+        width: 100%;
+        flex-direction: column;
+        font-size: .5rem;
+        padding: 5px 10px;
+        
+    }
+}
+@media (max-width: 900px){
+    nav ul{
+        width: 100%;
+        gap: 2px;
+        
+    }
+}
+@media (max-width: 900px){
+    nav ul li a{
+        width: 100%;
+        flex-direction: column;
+        font-size: .5rem;
+        
+    }
+}
+@media (max-width: 900px){
+    .hero-section{
+        width: 100%;
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+        
+    }
+}
+@media (max-width: 300px){
+    nav{
+        width: 100%;
+        flex-direction: column;
+    }
+}
+@media (max-width: 300px){
+    .text > p{
+        width: 100%;
+       font-size: 3rem;
+    }
+}
+@media (max-width: 300px){
+    .hero-section{
+        width: 100%;
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+        
+    }
+}
+.profile-container{
+    width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    
+}
+.profile-image img{
+    border-radius: 10px;
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.profile-text{
+    text-align: left;
+    font-size: 1.3rem;
+    font-family: "DM Sans", sans-serif;
+    margin-bottom: 20px;
+}
+.first-text{
+    font-size: 2.6rem;
+}
+.second-text{
+    line-height: 2rem;
+    margin-top: 20px;
+}
+#bolder-text{
+    font-weight: bold;
+}
+.profile-text button {
+    font-size: 1em;
+    margin-top: 10px;
+    padding: 15px 60px;
+    color: #ffffff;
+    background-color: #055f3a;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.profile-text button:hover {
+    background-color: #005230;
+    border: none;
+    color: white;
+}
+@media (max-width: 848px){
+    .first-text{
+        font-size: 2rem;
+    }
+}
+@media (max-width: 848px){
+    .second-text{
+        font-size: .9rem;
+    }
+}
+@media (max-width: 848px){
+    .profile-text button{
+        font-size: .9rem;
+        padding: 10px 15px;
+    }
+}
+.bottom-section{
+    width: 100%;
+    height: 500px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+.bottom-section::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-image: url(Images/wallpaperflare.com_wallpaper\ \(38\).jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-color: gray;
+    background-blend-mode: darken;
+    z-index: -1;
+}
+.bottom-text{
+    text-align: center;
+    line-height: 1.1;
+    margin-top: 100px;
+}
+.bottom-text{
+    font-size: 1.5rem;
+    font-family: "DM Sans", sans-serif;
+    color: white;
+}
+.bottom-text > button{
+    font-size: 1rem;
+    margin-top: 20px;
+    padding: 15px 30px;
+    background-color: transparent;
+    color: #ffffff;
+    border: 2px solid rgb(255, 255, 255);
+    border-radius: 9px;
+    cursor: pointer;
+}
+.bottom-text > button:hover{
+    background-color: #20694b;
+    border: none;
+}
+.bold-text{
+    font-size: 4rem;
+    font-family: "DM Sans", sans-serif;
+    color: white;
+    margin-bottom: 30px;
+}
+.smaller-text{
+    font-family: "DM Sans", sans-serif;
+}
+@media (max-width: 616px){
+    .bottom-section{
+        width: 100%;
+        height: 400px;
+        font-size: 1.9rem;
+    }
+}
+@media (max-width: 848px){
+    .bold-text{
+        font-size: 2rem;
+    }
+}
+@media (max-width: 848px){
+    .smaller-text{
+        font-size: 1rem;
+    }
+}
+@media (max-width: 616px){
+    .bottom-text button{
+        /* width: 100%; */
+        font-size: .9rem;
+        padding: 10px 20px;
+    }
+}
+footer{
+    width: 100%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px;
+    font-family: "DM Sans", sans-serif;
+}
+.bottom-link nav a{
+    margin: auto;
+   gap: 20px;
+}
+
+footer img{
+    width: 60px;
+    height: 60px;
+}
+
+@media (max-width: 848px){
+    footer{
+        width: 100%;
+        flex-direction: column;
+        margin-top: 10px;
+    }
+}
+@media (max-width: 848px){
+    footer nav{
+        width: 100%;
+        font-size: 1rem;
+        text-align: center;
+        display: flex;
+        line-height: 2;
+    }
+}
+@media (max-width: 848px){
+    footer p{
+        width: 100%;
+        font-size: .9rem;
+        text-align: center;
+    }
+}
+
+footer{
+    width: 90%;
+    margin: 40px auto 20px;
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: "DM Sans", sans-serif;
+}
+
+.link{
+    display: flex;
+    gap: 20px;
+    color: black;
+    text-decoration: none;
+    font-size: 1rem;
+}
+.link a{
+    color: black;
+    text-decoration: none;
+}
+.link:hover{
+    color: black;
+    text-decoration: none;
+
+}
+.footer-image img{
+    width: 60px;
+    height: 60px;
+}
+@media (max-width: 848px){
+    .footer{
+        width: 100%;
+        flex-direction: column;
+        display: block;
+    }
+}
+@media (max-width: 848px){
+    .link a{
+        display: block;
+    }
+}

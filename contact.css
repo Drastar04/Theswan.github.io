@@ -1,0 +1,193 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header{
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+header > nav{
+    width: 99%;
+    height: 70px;
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    font-family: "DM Sans", sans-serif;
+
+    /* background: rgba(0,0,0,0.5); */
+}
+
+nav > ul{
+    display: flex;
+    list-style-type: none;
+    gap: 10px;
+}
+nav > ul > li > a{
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    margin-left: 20px;
+    font-size: 1rem;
+    padding: 10px 10px;
+    display: flex;
+}
+nav > ul > li > a:hover{
+    color: blue;
+    text-decoration: underline;
+}
+
+.contact-details{
+    color: white;
+    text-decoration: none;
+    background-color: transparent;
+    border: 1px solid white;
+    padding: 8px 15px;
+    border-radius: 5px;
+    
+}
+.contact-details a:link{
+    color: white;
+    text-decoration: none;
+}
+.contact-details a:hover{
+    color: white;
+    text-decoration: underline;
+}
+.hero-section{
+    width: 100%;
+    height: 400px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+}
+.hero-section::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-image: url(Images/wallpaperflare.com_wallpaper\ \(38\).jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-color: gray;
+    background-blend-mode: darken;
+    z-index: -1;
+}
+.text{
+    text-align: center;
+}
+.text > p{
+    font-size: 5rem;
+    font-family: "DM Sans", sans-serif;
+    color: white;
+}
+
+
+.quote{
+    margin-top: 80px;
+    margin-bottom: 40px;
+    text-align: center;
+    font-family: "DM Sans", sans-serif;
+    font-size: 3.5rem;
+}
+form{
+    margin-bottom: 30px;
+}
+.form1{
+    margin-bottom: 20px;
+}
+.form2{
+    margin-bottom: 20px;
+}
+.form3{
+    margin-bottom: 20px;
+}
+.form4{
+    margin-bottom: 20px;
+    
+}
+textarea{
+    width: 50%;
+    padding: 20px;
+    margin: auto;
+    font-size: 1.5rem;
+    border-radius: 4px;
+    display: block;
+    font-family: "DM Sans", sans-serif;
+}
+input{
+    width: 50%;
+    padding: 20px;
+    margin: auto;
+    font-size: 1.5rem;
+    border-radius: 4px;
+    display: block;
+}
+
+input{
+    outline: none;
+}
+input:focus{
+    border: 2px solid rgb(0, 0, 0);
+    border-radius: 5px;
+    color: white;
+}
+form button{
+    background-color: rgb(38, 94, 47);
+    padding: 15px 30px;
+    border-radius: 5px;
+    border: none;
+    color: white;
+    font-size: 1.2rem;
+    margin-top: 30px;
+    display: block;
+    
+}
+form button:hover{
+    background-color: rgb(12, 39, 16);
+}
+
+.whole-contact-details{
+    margin: auto;
+    width: 100%;
+    background-color: rgb(225, 255, 225);
+    height: 500px;
+    font-family: "DM Sans", sans-serif;
+}
+.contact-details{
+    color: black;
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+.bigger-text{
+    text-align: center;
+    font-size: 3rem;
+}
+.contact{
+    font-size: 2rem;
+}
+.right{
+    font-size: 2rem;
+}
+.right p{
+    margin-top: 20px;
+}
